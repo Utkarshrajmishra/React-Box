@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import SearchBox from "../components/SearchBox";
 import AvatarCircles from "../components/magicui/avatar-circles";
 import Card from "../components/Card";
 import { Snippets } from "../constants/Snippets";
@@ -47,7 +48,7 @@ const Home = () => {
             contains functions and code snippets which can be used on your
             webpage.
           </p>
-          
+          <SearchBox/>
         </section>
         <section className="md:px-[20%] px-[10%] grid md:grid-cols-2 grid-cols-1 mt-6 gap-4 mb-8">
           {Snippets?.map((items) => (

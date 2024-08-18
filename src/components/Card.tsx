@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ title, content }: CardProps) => {
   return (
-    <section className="outline outline-1 outline-zinc-300 bg-zinc-50 font-inter w-[350px] md:w-[400px] min-h-full flex flex-col rounded-xl p-4 cursor-pointer">
+    <section className="outline outline-1 outline-zinc-300 bg-gray-50 font-inter w-[350px] md:w-[400px] min-h-full flex flex-col rounded-xl p-4 cursor-pointer">
       <div className="flex-grow">
         <img src={ReactIcon} alt="" width={35} />
         <p className="font-semibold mt-2 text-[1.2rem]">{title}</p>
