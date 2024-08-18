@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import AvatarCircles from "../components/magicui/avatar-circles";
 import Card from "../components/Card";
+import { Snippets } from "../constants/Snippets";
 
 const avatarUrls = [
   "https://avatars.githubusercontent.com/u/16860528",
@@ -16,7 +17,7 @@ const Home = () => {
         <NavBar />
         <main className="font-inter w-full md:px-[20%] px-[10%] mt-14">
           <div className="">
-            <h1 className="text-5xl font-bold">React Box Snippets</h1>
+            <h1 className="text-5xl font-bold">React Snippets Box</h1>
             <p className="text-zinc-700 font-inter mt-5">
               🚀 Ace your next
               <span className="p-1 ml-1 bg-zinc-100 font-bold text-zinc-600">
@@ -39,13 +40,21 @@ const Home = () => {
           <p className="text-3xl font-bold">Code Snippets</p>
           <p className="mt-3 text-zinc-600">
             Reusable code{" "}
-            <span className="p-1 bg-zinc-100 outline outline-1 outline-zinc-200 font-bold  text-zinc-700">
+            <span className="p-1 bg-zinc-100 outline outline-1 outline-zinc-200 font-bold text-zinc-700">
               snippets
             </span>{" "}
             that can be easily integrated in your application 🧩. The page
             contains functions and code snippets which can be used on your
             webpage.
           </p>
+          
+        </section>
+        <section className="md:px-[20%] px-[10%] grid md:grid-cols-2 grid-cols-1 mt-6 gap-4 mb-8">
+          {Snippets?.map((items) => (
+            <div key={items.id}>
+              <Card title={items.title} content={items.content} />
+            </div>
+          ))}
         </section>
       </div>
     </section>
