@@ -1,10 +1,10 @@
 import "./App.css";
-import BlurIn from "./components/magicui/blur-in";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <BlurIn word={"Hello World"} />
+      <Home/>
     </>
   );
 }
