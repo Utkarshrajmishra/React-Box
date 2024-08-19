@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import SearchBox from "../components/SearchBox";
 import AvatarCircles from "../components/magicui/avatar-circles";
@@ -12,6 +13,20 @@ const avatarUrls = [
 ];
 
 const Home = () => {
+  // State to manage the search query
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Function to handle the search input
+  const handleSearch = (query:string) => {
+    setSearchQuery(query);
+  };
+
+  // Filter snippets based on search query
+  const filteredSnippets = Snippets.filter(
+    (snippet) =>
+      snippet.title.toLowerCase().includes(searchQuery.toLowerCase()))
+
+
   return (
     <section>
       <div>
@@ -48,10 +63,12 @@ const Home = () => {
             contains functions and code snippets which can be used on your
             webpage.
           </p>
-          <SearchBox/>
+
+          <SearchBox onSearch={handleSearch} />
         </section>
+
         <section className="md:px-[20%] px-[10%] grid md:grid-cols-2 grid-cols-1 mt-6 gap-4 mb-8">
-          {Snippets?.map((items) => (
+          {filteredSnippets?.map((items) => (
             <div key={items.id}>
               <Card title={items.title} content={items.content} />
             </div>

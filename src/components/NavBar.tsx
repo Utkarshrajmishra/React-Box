@@ -8,7 +8,7 @@ const NavBar = () => {
         <div>
           <p className="text-sm text-white w-fit bg-black p-2">RB</p>
         </div>
-        <div className="text-zinc-800 text-2xl flex gap-2">
+        <div className="text-black   text-[2rem] flex gap-4">
           <FaLinkedin />
           <FaGithub />
           <FaInstagram />

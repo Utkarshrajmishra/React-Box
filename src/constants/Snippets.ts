@@ -11,8 +11,24 @@ export const Snippets = [
   },
   {
     id: 2,
-    title: "Accordion",
-    content:"Create a simple accordian component",
+    title: "Shuffle List",
+    content:"Shuffle content of list on button click",
   },
+  {
+    id:4,
+    title:'Swap Content',
+    content:'Shuffle content of two list based on the checkbox'
+  },
+  {
+    id:5,
+    title:'Image Carousel',
+    content:'Implement a image carousel'
+  },
+
+  {
+    id:6,
+    title:'Rating System',
+    content:'Implement a rating component'
+  }
   
 ];
