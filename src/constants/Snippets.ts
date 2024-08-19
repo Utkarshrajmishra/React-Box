@@ -29,6 +29,11 @@ export const Snippets = [
     id:6,
     title:'Rating System',
     content:'Implement a rating component'
+  },
+  {
+    id:7,
+    title:'Multipage Form',
+    content:'Create a multipage form with two button to handle next and previous '
   }
   
 ];

@@ -17,26 +17,24 @@ const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Function to handle the search input
-  const handleSearch = (query:string) => {
+  const handleSearch = (query: string) => {
     setSearchQuery(query);
   };
 
   // Filter snippets based on search query
-  const filteredSnippets = Snippets.filter(
-    (snippet) =>
-      snippet.title.toLowerCase().includes(searchQuery.toLowerCase()))
-
+  const filteredSnippets = Snippets.filter((snippet) =>
+    snippet.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <section>
       <div>
-        <NavBar />
         <main className="font-inter w-full md:px-[20%] px-[10%] mt-14">
           <div className="">
             <h1 className="text-5xl font-bold">React Snippets Box</h1>
             <p className="text-zinc-700 font-inter mt-5">
-              🚀 Ace your next
-              <span className="p-1 ml-1 bg-zinc-100 font-bold text-zinc-600">
+              🚀 Ace your next{" "}
+              <span className="p-1 outline-1 outline-zinc-200 outline  bg-zinc-100 font-bold text-zinc-600">
                 React Machine Coding Interview
               </span>{" "}
               with ease.
@@ -53,15 +51,12 @@ const Home = () => {
           </div>
         </main>
         <section className="md:px-[20%] px-[10%] mt-16 font-inter">
-          <p className="text-3xl font-bold">Code Snippets</p>
+          <p className="text-3xl font-bold">Coding Problems</p>
           <p className="mt-3 text-zinc-600">
-            Reusable code{" "}
-            <span className="p-1 bg-zinc-100 outline outline-1 outline-zinc-200 font-bold text-zinc-700">
-              snippets
-            </span>{" "}
-            that can be easily integrated in your application 🧩. The page
-            contains functions and code snippets which can be used on your
-            webpage.
+            <b>Essential machine coding problems</b>
+            commonly featured in <b>ReactJS interviews</b> 💻, paired with
+            <b> versatile snippet</b>
+            🔧 ready to be <b>seamlessly integrated</b> into your projects ✨.
           </p>
 
           <SearchBox onSearch={handleSearch} />
