@@ -62,6 +62,12 @@ export const Snippets = [
     title: 'Dynamic Form',
     link:'https://codesandbox.io/p/sandbox/dyanmic-form-wc8ky8',
     content:'Create a form with input and button to increase the number of input and a submit button and a button to remove associated input'
+  },
+  {
+    id:11,
+    title:'Progress Bar',
+    link:'https://codesandbox.io/p/sandbox/progress-bar-d9w6hx?file=%2Fsrc%2FApp.js',
+    content:'Create a progress bar with a percentage indicator that increase every 2 sec'
   }
   
 ];
