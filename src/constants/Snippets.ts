@@ -68,6 +68,13 @@ export const Snippets = [
     title:'Progress Bar',
     link:'https://codesandbox.io/p/sandbox/progress-bar-d9w6hx?file=%2Fsrc%2FApp.js',
     content:'Create a progress bar with a percentage indicator that increase every 2 sec'
-  }
+  },
+    {
+    id:12,
+    title:'Traffic Light',
+    link:'https://codesandbox.io/p/sandbox/traffic-light-5wt9nz?file=%2Fsrc%2FApp.js',
+    content:'Create a traffic light container that changes it color.'
+    }
+        
   
 ];
